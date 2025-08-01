@@ -38,6 +38,7 @@ namespace tipos_de_colecciones
             }
             */
 
+            /*
             Dictionary<int, string> numbers = new Dictionary<int, string>();
             numbers.Add(1, "1a");
             numbers.Add(2, "2");
@@ -45,6 +46,34 @@ namespace tipos_de_colecciones
             numbers.Add(4, "4");
 
             foreach (var i in numbers.Values)
+            {
+                Console.WriteLine(i);
+            }
+            */
+
+            /*
+            Queue<int> numbers = new Queue<int>();
+            numbers.Enqueue(1);
+            numbers.Enqueue(2);
+            numbers.Enqueue(3);
+            numbers.Enqueue(4);
+            numbers.Dequeue();
+            numbers.Dequeue();
+
+            foreach (int i in numbers)
+            {
+                Console.WriteLine(i);
+            }
+            */
+
+            Stack<int> numbers = new Stack<int>();
+            numbers.Push(1);
+            numbers.Push(2);
+            numbers.Push(3);
+            numbers.Push(4);
+            int last = numbers.Pop(); 
+
+            foreach (var i in numbers)
             {
                 Console.WriteLine(i);
             }
